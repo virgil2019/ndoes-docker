@@ -7,4 +7,4 @@ WORKDIR /opt/omniverse/node/
 COPY . .
 
 # Run
-ENTRYPOINT ./substrate-contracts-node --dev --tmp --ws-port 10102
+ENTRYPOINT ./substrate-contracts-node --dev --tmp --ws-port 10102 --ws-external

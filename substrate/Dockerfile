@@ -7,4 +7,4 @@ WORKDIR /opt/omniverse/node/
 COPY . .
 
 # Run
-ENTRYPOINT ./node-template --dev --tmp --ws-port 10101
+ENTRYPOINT ./node-template --dev --tmp --ws-port 10101 --ws-external

@@ -7,4 +7,4 @@ WORKDIR /opt/omniverse/node/
 COPY . .
 
 # Run
-ENTRYPOINT npm install && npx ganache --miner.blockTime 1 -s 0 -p 10100
+ENTRYPOINT npm install && npx ganache --miner.blockTime 1 -s 0 -p 10100 -h 0.0.0.0
