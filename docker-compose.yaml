@@ -2,7 +2,6 @@ version: '3'
 services:
   node-evm:
     image: 'registry.us-west-1.aliyuncs.com/omniverse/node-evm:latest'
-    network_mode: host
     ports:
       - "10100:10100"
     logging:
@@ -12,7 +11,6 @@ services:
     container_name: node-evm
   node-substrate:
     image: 'registry.us-west-1.aliyuncs.com/omniverse/node-substrate:latest'
-    network_mode: host
     ports:
       - "10101:10101"
     logging:
@@ -22,7 +20,6 @@ services:
     container_name: node-substrate
   node-ink:
     image: 'registry.us-west-1.aliyuncs.com/omniverse/node-ink:latest'
-    network_mode: host
     ports:
       - "10102:10102"
     logging:
